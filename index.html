@@ -3,85 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitrine VIP - Shopping Goiabeiras</title>
+    <title>Vivartes - Loja, Cursos e Oficinas</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
-        body { font-family: 'Montserrat', sans-serif; }
-        .hover-zoom:hover { transform: scale(1.05); transition: transform 0.3s ease; }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; background-color: #FAFAFA; }
+        .art-shadow { box-shadow: 4px 4px 0px 0px rgba(139, 92, 246, 1); border: 2px solid #000; }
+        .hover-art-shadow:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0px 0px rgba(139, 92, 246, 1); transition: all 0.2s ease; }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="text-gray-800">
 
-    <nav class="bg-black text-white p-4 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold tracking-widest">BOUTIQUE<span class="text-yellow-500">.MT</span></h1>
-            <div class="space-x-4 hidden md:block">
-                <a href="#" class="hover:text-yellow-500">Lançamentos</a>
-                <a href="#" class="hover:text-yellow-500">Roupas</a>
-                <a href="#" class="hover:text-yellow-500">Acessórios</a>
+    <nav class="bg-white border-b-2 border-black sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-purple-600 tracking-tighter"><i class="fas fa-palette mr-2"></i>VIVARTES</h1>
+            <div class="hidden md:flex space-x-6 font-semibold">
+                <a href="#produtos" class="hover:text-purple-600">Loja</a>
+                <a href="#oficinas" class="hover:text-amber-500">Oficinas</a>
+                <a href="#cursos" class="hover:text-purple-600">Cursos</a>
             </div>
-            <div class="flex space-x-4">
-                <i class="fas fa-search text-xl cursor-pointer"></i>
-                <i class="fas fa-shopping-bag text-xl cursor-pointer"></i>
-            </div>
+            <button class="bg-black text-white px-5 py-2 font-bold rounded hover:bg-purple-600 transition hidden md:block">
+                Fale Conosco
+            </button>
+            <i class="fas fa-bars text-2xl md:hidden"></i>
         </div>
     </nav>
 
-    <header class="relative bg-cover bg-center h-96 flex items-center" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop');">
-        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div class="container mx-auto relative z-10 text-center text-white px-4">
-            <h2 class="text-4xl md:text-6xl font-bold mb-4">Coleção Inverno 2026</h2>
-            <p class="text-lg md:text-xl mb-6">Compre online e retire hoje mesmo na nossa loja do Shopping Goiabeiras.</p>
-            <button class="bg-yellow-500 text-black font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition">Ver Coleção Completa</button>
+    <header class="relative bg-purple-100 border-b-2 border-black overflow-hidden">
+        <div class="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 z-10">
+                <span class="bg-amber-400 font-bold px-3 py-1 rounded-full text-sm border-2 border-black mb-4 inline-block">Shopping Goiabeiras</span>
+                <h2 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Sua criatividade <br><span class="text-purple-600">ganha vida aqui.</span></h2>
+                <p class="text-lg text-gray-700 mb-8 font-medium">Materiais de arte de alta qualidade, cursos especializados e oficinas práticas para todas as idades em Cuiabá.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#oficinas" class="bg-purple-600 text-white font-bold py-3 px-8 border-2 border-black art-shadow hover-art-shadow text-center">Agendar Oficina</a>
+                    <a href="#produtos" class="bg-white text-black font-bold py-3 px-8 border-2 border-black art-shadow hover-art-shadow text-center">Comprar Materiais</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0 relative">
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2071&auto=format&fit=crop" alt="Materiais de Arte" class="rounded-xl border-4 border-black shadow-[8px_8px_0px_0px_rgba(245,158,11,1)] transform rotate-2">
+            </div>
         </div>
     </header>
 
-    <section class="container mx-auto py-16 px-4">
-        <h3 class="text-3xl font-bold text-center mb-12 border-b-2 border-black inline-block pb-2">Destaques da Semana</h3>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer">
-                <div class="overflow-hidden h-80">
-                    <img src="https://images.unsplash.com/photo-1550639525-c97d455acf70?q=80&w=1926&auto=format&fit=crop" alt="Vestido" class="w-full h-full object-cover hover-zoom">
-                </div>
-                <div class="p-6 text-center">
-                    <h4 class="font-semibold text-lg text-gray-800">Vestido Midi Elegance</h4>
-                    <p class="text-gray-500 text-sm mb-2">P, M, G</p>
-                    <p class="text-xl font-bold text-black mb-4">R$ 289,90</p>
-                    <button class="w-full bg-black text-white py-2 rounded hover:bg-gray-800"><i class="fab fa-whatsapp mr-2"></i>Comprar no VIP</button>
-                </div>
+    <section id="oficinas" class="py-16 bg-white border-b-2 border-black">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold mb-3">Agenda Criativa</h3>
+                <p class="text-gray-600">Reserve sua vaga nas nossas oficinas e cursos presenciais.</p>
             </div>
 
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer">
-                <div class="overflow-hidden h-80">
-                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop" alt="Blusa" class="w-full h-full object-cover hover-zoom">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-amber-50 border-2 border-black rounded-xl p-6 art-shadow hover-art-shadow relative flex flex-col">
+                    <span class="absolute top-0 right-0 bg-black text-white font-bold px-3 py-1 text-xs border-b-2 border-l-2 border-black rounded-bl-lg">NOVIDADE</span>
+                    <i class="fas fa-paint-brush text-4xl text-amber-500 mb-4"></i>
+                    <h4 class="text-2xl font-bold mb-2">Oficina de Aquarela</h4>
+                    <p class="text-sm text-gray-600 mb-4"><i class="far fa-calendar-alt mr-1"></i> Sábados - 14h às 16h<br><i class="fas fa-users mr-1"></i> Turmas reduzidas</p>
+                    <p class="text-sm mb-6 flex-grow">Aprenda as técnicas básicas de aquarela para criar suas próprias ilustrações. Material incluso!</p>
+                    <button class="w-full bg-black text-white font-bold py-2 border-2 border-black hover:bg-amber-500 hover:text-black transition">Reservar Vaga (R$ 80)</button>
                 </div>
-                <div class="p-6 text-center">
-                    <h4 class="font-semibold text-lg text-gray-800">Blazer Alfaiataria</h4>
-                    <p class="text-gray-500 text-sm mb-2">M, G, GG</p>
-                    <p class="text-xl font-bold text-black mb-4">R$ 450,00</p>
-                    <button class="w-full bg-black text-white py-2 rounded hover:bg-gray-800"><i class="fab fa-whatsapp mr-2"></i>Comprar no VIP</button>
+
+                <div class="bg-purple-50 border-2 border-black rounded-xl p-6 art-shadow hover-art-shadow flex flex-col">
+                    <i class="fas fa-shapes text-4xl text-purple-500 mb-4"></i>
+                    <h4 class="text-2xl font-bold mb-2">Curso de Cerâmica</h4>
+                    <p class="text-sm text-gray-600 mb-4"><i class="far fa-calendar-alt mr-1"></i> Terças e Quintas<br><i class="fas fa-clock mr-1"></i> Duração: 2 meses</p>
+                    <p class="text-sm mb-6 flex-grow">Módulo completo para iniciantes. Modelagem manual e introdução à pintura em cerâmica.</p>
+                    <button class="w-full bg-black text-white font-bold py-2 border-2 border-black hover:bg-purple-600 hover:text-white transition">Ver Cronograma</button>
+                </div>
+
+                 <div class="bg-blue-50 border-2 border-black rounded-xl p-6 art-shadow hover-art-shadow flex flex-col">
+                    <i class="fas fa-child text-4xl text-blue-500 mb-4"></i>
+                    <h4 class="text-2xl font-bold mb-2">Vivartes Kids</h4>
+                    <p class="text-sm text-gray-600 mb-4"><i class="far fa-calendar-alt mr-1"></i> Domingos - 10h<br><i class="fas fa-smile mr-1"></i> Para crianças de 5 a 10 anos</p>
+                    <p class="text-sm mb-6 flex-grow">Manhãs divertidas com pintura livre, colagem e desenvolvimento motor através da arte.</p>
+                    <button class="w-full bg-black text-white font-bold py-2 border-2 border-black hover:bg-blue-500 hover:text-black transition">Inscrever Criança</button>
                 </div>
             </div>
-            
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer">
-                <div class="overflow-hidden h-80">
-                    <img src="https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=1887&auto=format&fit=crop" alt="Bolsa" class="w-full h-full object-cover hover-zoom">
+        </div>
+    </section>
+
+    <section id="produtos" class="py-16 bg-stone-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-end mb-10 border-b-2 border-black pb-4">
+                <div>
+                    <h3 class="text-3xl font-bold">Vitrine da Loja</h3>
+                    <p class="text-gray-600">Os melhores materiais para a sua arte.</p>
                 </div>
-                <div class="p-6 text-center">
-                    <h4 class="font-semibold text-lg text-gray-800">Bolsa Couro Premium</h4>
-                    <p class="text-gray-500 text-sm mb-2">Tamanho Único</p>
-                    <p class="text-xl font-bold text-black mb-4">R$ 320,00</p>
-                    <button class="w-full bg-black text-white py-2 rounded hover:bg-gray-800"><i class="fab fa-whatsapp mr-2"></i>Comprar no VIP</button>
-                </div>
+                <a href="#" class="font-bold text-purple-600 hover:underline hidden md:block">Ver todos os produtos <i class="fas fa-arrow-right ml-1"></i></a>
             </div>
 
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer">
-                <div class="overflow-hidden h-80">
-                    <img src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?q=80&w=1962&auto=format&fit=crop" alt="Saia" class="w-full h-full object-cover hover-zoom">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <div class="bg-white border-2 border-black rounded-lg overflow-hidden group">
+                    <div class="h-48 md:h-64 overflow-hidden border-b-2 border-black">
+                        <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=2070&auto=format&fit=crop" alt="Tinta" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 line-clamp-1">Kit Tintas Acrílicas</h4>
+                        <p class="text-purple-600 font-extrabold text-lg mt-1">R$ 149,90</p>
+                        <button class="mt-3 w-full bg-white border-2 border-black text-black font-bold py-1 hover:bg-purple-600 hover:text-white transition">Comprar</button>
+                    </div>
                 </div>
-                <div class="p-6 text-center">
-                    <h4 class="font-semibold text-lg text-gray-800">Saia Plissada</h4>
-                    <p class="text-gray-50
+
+                <div class="bg-white border-2 border-black rounded-lg overflow-hidden group">
+                    <div class="h-48 md:h-64 overflow-hidden border-b-2 border-black">
+                        <img src="https://images.unsplash.com/photo-1583214709494-1f749db21cb3?q=80&w=1964&auto=format&fit=crop" alt="Pincéis" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 line-clamp-1">Set de Pincéis Profissionais</h4>
+                        <p class="text-purple-600 font-extrabold text-lg mt-1">R$ 89,90</p>
+                        <button class="mt-3 w-full bg-white border-2 border-black text-black font-bold py-1 hover:bg-purple-600 hover:text-white transition">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="bg-white border-2 border-black rounded-lg overflow-hidden group">
+                    <div class="h-48 md:h-64 overflow-hidden border-b-2 border-black">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=1945&auto=format&fit=crop" alt="Tela" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 line-clamp-1">Tela de Algodão 40x50</h4>
+                        <p class="text-purple-600 font-extrabold text-lg mt-1">R$ 45,00</p>
+                        <button class="mt-3 w-full bg-white border-2 border-black text-black font-bold py-1 hover:bg-purple-600 hover:text-white transition">Comprar</button>
+                    </div>
+                </div>
+
+                 <div class="bg-white border-2 border-black rounded-lg overflow-hidden group">
+                    <div class="h-48 md:h-64 overflow-hidden border-b-2 border-black">
+                        <img src="https://images.unsplash.com/photo-1629196914282-e6e760cc2b4f?q=80&w=1934&auto=format&fit=crop" alt="Sketchbook" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 line-clamp-1">Sketchbook Folhas Lisas</h4>
+                        <p class="text-purple-600 font-extrabold text-lg mt-1">R$ 65,90</p>
+                        <button class="mt-3 w-full bg-white border-2 border-black text-black font-bold py-1 hover:bg-purple-600 hover:text-white transition">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
