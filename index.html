@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine VIP - Shopping Goiabeiras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+        body { font-family: 'Montserrat', sans-serif; }
+        .hover-zoom:hover { transform: scale(1.05); transition: transform 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-black text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-widest">BOUTIQUE<span class="text-yellow-500">.MT</span></h1>
+            <div class="space-x-4 hidden md:block">
+                <a href="#" class="hover:text-yellow-500">Lançamentos</a>
+                <a href="#" class="hover:text-yellow-500">Roupas</a>
+                <a href="#" class="hover:text-yellow-500">Acessórios</a>
+            </div>
+            <div class="flex space-x-4">
+                <i class="fas fa-search text-xl cursor-pointer"></i>
+                <i class="fas fa-shopping-bag text-xl cursor-pointer"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-cover bg-center h-96 flex items-center" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop');">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="container mx-auto relative z-10 text-center text-white px-4">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Coleção Inverno 2026</h2>
+            <p class="text-lg md:text-xl mb-6">Compre online e retire hoje mesmo na nossa loja do Shopping Goiabeiras.</p>
+            <button class="bg-yellow-500 text-black font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition">Ver Coleção Completa</button>
+        </div>
+    </header>
+
+    <section class="container mx-auto py-16 px-4">
+        <h3 class="text-3xl font-bold text-center mb-12 border-b-2 border-black inline-block pb-2">Destaques da Semana</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer">
+                <div class="overflow-hidden h-80">
+                    <img src="https://images.unsplash.com/photo-1550639525-c97d455acf70?q=80&w=1926&auto=format&fit=crop" alt="Vestido" class="w-full h-full object-cover hover-zoom">
+                </div>
+                <div class="p-6 text-center">
+                    <h4 class="font-semibold text-lg text-gray-800">Vestido Midi Elegance</h4>
+                    <p class="text-gray-500 text-sm mb-2">P, M, G</p>
+                    <p class="text-xl font-bold text-black mb-4">R$ 289,90</p>
+                    <button class="w-full bg-black text-white py-2 rounded hover:bg-gray-800"><i class="fab fa-whatsapp mr-2"></i>Comprar no VIP</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer">
+                <div class="overflow-hidden h-80">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop" alt="Blusa" class="w-full h-full object-cover hover-zoom">
+                </div>
+                <div class="p-6 text-center">
+                    <h4 class="font-semibold text-lg text-gray-800">Blazer Alfaiataria</h4>
+                    <p class="text-gray-500 text-sm mb-2">M, G, GG</p>
+                    <p class="text-xl font-bold text-black mb-4">R$ 450,00</p>
+                    <button class="w-full bg-black text-white py-2 rounded hover:bg-gray-800"><i class="fab fa-whatsapp mr-2"></i>Comprar no VIP</button>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer">
+                <div class="overflow-hidden h-80">
+                    <img src="https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=1887&auto=format&fit=crop" alt="Bolsa" class="w-full h-full object-cover hover-zoom">
+                </div>
+                <div class="p-6 text-center">
+                    <h4 class="font-semibold text-lg text-gray-800">Bolsa Couro Premium</h4>
+                    <p class="text-gray-500 text-sm mb-2">Tamanho Único</p>
+                    <p class="text-xl font-bold text-black mb-4">R$ 320,00</p>
+                    <button class="w-full bg-black text-white py-2 rounded hover:bg-gray-800"><i class="fab fa-whatsapp mr-2"></i>Comprar no VIP</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer">
+                <div class="overflow-hidden h-80">
+                    <img src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?q=80&w=1962&auto=format&fit=crop" alt="Saia" class="w-full h-full object-cover hover-zoom">
+                </div>
+                <div class="p-6 text-center">
+                    <h4 class="font-semibold text-lg text-gray-800">Saia Plissada</h4>
+                    <p class="text-gray-50
